@@ -4,6 +4,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+
 export default function ScriptFeedback() {
   const [step, setStep] = useState<1 | 2>(1)
   const [creativeBrief, setCreativeBrief] = useState("")
@@ -14,7 +16,7 @@ export default function ScriptFeedback() {
   const handleNext = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch('http://localhost:8000/validate-brief', {
+      const response = await fetch(`${API_URL}/validate-brief`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -37,7 +39,7 @@ export default function ScriptFeedback() {
   const generateFeedback = async () => {
     setIsLoading(true)
     try {
-      const response = await fetch('http://localhost:8000/generate-feedback', {
+      const response = await fetch(`${API_URL}/generate-feedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
