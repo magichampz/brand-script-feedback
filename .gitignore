@@ -33,4 +33,4 @@ Thumbs.db
 .env.production.local
 
 # testing files
-data_cleaning.ipynb
+data_cleaning_copy.ipynb
