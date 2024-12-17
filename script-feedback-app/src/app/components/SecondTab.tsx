@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { PlusCircle, XCircle } from 'lucide-react'
+import { CheckCircle2, PlusCircle, XCircle } from 'lucide-react'
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -14,6 +14,7 @@ export default function MultipleFeedbackPage() {
   const [finalFeedback, setFinalFeedback] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [isScriptActive, setIsScriptActive] = useState(false)
+  const [isValidated, setIsValidated] = useState(false)
 
   // Add a new feedback entry
   const addFeedbackEntry = () => {
@@ -52,6 +53,7 @@ export default function MultipleFeedbackPage() {
       const data = await response.json()
       setCombinedFeedback(data.combined_feedback)
       setIsScriptActive(true)
+      setIsValidated(true)
     } catch (error) {
       console.error('Error:', error)
       alert('An error occurred while processing feedbacks.')
@@ -111,6 +113,7 @@ export default function MultipleFeedbackPage() {
         <Button onClick={handleProcessFeedbacks} disabled={isLoading || feedbackEntries.some(e => e.trim() === "")}>
           {isLoading ? 'Processing...' : 'Next'}
         </Button>
+        {isValidated && <CheckCircle2 className="text-green-500" />}
       </div>
       {combinedFeedback && (
         <div className="p-4 bg-gray-100 rounded mt-4">
