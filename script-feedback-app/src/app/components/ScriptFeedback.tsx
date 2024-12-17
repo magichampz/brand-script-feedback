@@ -22,7 +22,11 @@ export default function ScriptFeedback() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ brief: creativeBrief }),
+        mode: 'cors',  // Add this line
       })
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const data = await response.json()
       if (data.valid) {
         setStep(2)
@@ -45,7 +49,11 @@ export default function ScriptFeedback() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ brief: creativeBrief, script }),
+        mode: 'cors',  // Add this line
       })
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const data = await response.json()
       setFeedback(data.feedback)
     } catch (error) {
