@@ -31,3 +31,6 @@ Thumbs.db
 .env.development.local
 .env.test.local
 .env.production.local
+
+# testing files
+data_cleaning.ipynb
