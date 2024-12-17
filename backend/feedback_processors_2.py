@@ -1,7 +1,16 @@
 # feedback_processor.py
 import json
+from dotenv import load_dotenv
+from openai import OpenAI
+import os
 
-def split_feedback(feedback, client):
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("OpenAI API Key not found. Set the OPENAI_API_KEY environment variable.")
+
+client = OpenAI(api_key=api_key)
+
+def split_feedback(feedback):
     """
     Splits feedback into relevant sections.
     """
@@ -51,7 +60,7 @@ def split_feedback(feedback, client):
     return splits
 
 
-def extract_script_key_points_2(script_feedback, decision, client):
+def extract_script_key_points_2(script_feedback, decision):
     """
     Extracts key points from the script feedback.
     """
@@ -166,7 +175,7 @@ def consolidate_feedbacks(feedback_list):
     return consolidated_feedback
 
 
-def summarize_feedback(consolidated_feedback, client):
+def summarize_feedback(consolidated_feedback):
     """
     Summarizes the consolidated feedback into a concise report.
     """
@@ -211,7 +220,7 @@ def summarize_feedback(consolidated_feedback, client):
     return summarized_feedback
 
 
-def generate_feedback_2nd(script, summarized_feedback, client):
+def generate_feedback_2nd(script, summarized_feedback):
     """
     Generates feedback based on the summarized feedback and script.
     """
@@ -225,8 +234,8 @@ def generate_feedback_2nd(script, summarized_feedback, client):
     4. Do not talk about more than 2 themes. The feedback needs to be concise
 
     Output the feedback in the following format:
-    "Draft Script with Further Feedback"
-    <insert feedback about the script here>
+    "Draft Script with Further Feedback: "
+    <insert feedback about the script below>
 
     """
 

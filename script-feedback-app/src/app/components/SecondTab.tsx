@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { CheckCircle2, PlusCircle, XCircle } from 'lucide-react'
+import { PlusCircle, XCircle } from 'lucide-react'
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -130,7 +130,7 @@ export default function MultipleFeedbackPage() {
       </Button>
       {finalFeedback && (
         <div className="mt-4 p-4 bg-gray-100 rounded">
-          <h2 className="text-xl font-semibold mb-2">Final Feedback:</h2>
+          <h2 className="text-xl font-semibold mb-2">More Feedback:</h2>
           <p>{finalFeedback}</p>
         </div>
       )}
