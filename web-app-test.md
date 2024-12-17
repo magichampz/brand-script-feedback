@@ -1,4 +1,4 @@
-**Sample script:** (for both methods)
+**Sample script:** (for both methods)<br>
 Every now and then I like to compare my old art and the art I make currently to see if I’m improving, and also critic myself and find areas in my art I can improve on and get better. But it’s usually difficult organizing every drawing together and putting side by side on the same page so i reached out to the heavens for help and the art gods blessed me with milanote, the sponsor of today’s video. Milanote is an interactive tool that helps you organize all the different files for your CREATIVE projects on one platform so accessing them can be easier. Milanote allows you to collect and organize pictures, videos, notes and text, and arrange them into different boards using any of their built in templates that make it easy to start off your creative projects. You can also create several tasks for different things you want to study, and tick them when you’re done. For this instance, I’ll start by creating a general board where I’ll layout a broad overview that covers everything concerning the project I’m about to work on. next I’ll move on to place my references in a sub board and place my old art and current art in separate boards so I know where to find each of them. Then I create a new board where I place both drawings side by side so I can compare them, and also make notes on things I want to improve on or change. I like to use milanote’s web clipper tool when gathering screenshots from other artists that draw in a style I admire, and then save every image or screenshot I find useful In the board. 
  This also works well when you’re collaborating with other artists and working on the same project, so everyone has a good understanding of what the project is about and has access to the same references all at once since everything is properly organized in the same place.
 The kind folks at milanote are giving free access with no time limit to everyone who signs up for a free account using the link in the description. So head over to https://milanote.com/mohammedagbadi to try it out for free with no time limit. All the links will be in the description, and thank you to milanote for sponsoring this video.
@@ -6,7 +6,7 @@ The kind folks at milanote are giving free access with no time limit to everyone
 
 ### Testing method 1:
 
-**Creative brief:**
+**Creative brief:** <br>
 Brand Safety Guidelines
 Milanote does not sponsor video content that includes any of the following:
 - Explicit adult themes, language, or imagery
@@ -34,7 +34,7 @@ You can copy any feedback messages from the "message" column in the csv.
 
 
 #### Some previous feedbacks:
-**feedback 1**
+**feedback 1** <br>
 Approved Draft Script With Feedback:
 Hey Elizabeth, 
 
@@ -52,7 +52,7 @@ Remember to go back to the Creative Brief for more reference. Looking forward to
 
 Best, Himika
 
-**feedback 2**
+**feedback 2** <br>
 Approved Draft Script With Feedback:
 Thanks so much for sharing your script! This sounds fantastic. One small thought I had was to suggest how your audience would use Milanote and why it would bring them value, i.e. if they are a artist and have a art project they need to plan, gathering inspiration from the web, collecting references of other artist work, or making a moodboard is all possible within Milanote. You're welcome to start drafting your video. Looking forward to seeing it soon! Many thanks, Bella
 Approved Draft Script With Feedback:
@@ -73,7 +73,7 @@ Best,
 Himika
 
 
-**feedback 3**
+**feedback 3** <br>
 Approved Draft Script With Feedback:
 Hey yaejiyea,
 
