@@ -23,7 +23,7 @@ Aim was to develop a feedback generation system for video scripts. The crux of t
 
 This method performed better in producing feedback, but did not quite nail the approval rejection process.
 
-### Feedback Generator 1: Using the creative brief document
+### Feedback Generator 2: Using the creative brief document
 1. Client can add up to 10 previous feedback messages they have previously given.
    1. For each message:
     1. `split_feedback(feedback)`: splits the feedback message into different components to isolate the feedback relevant to the script.
